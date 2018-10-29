@@ -1,8 +1,7 @@
 ---
 - name: import erlang rpm key
   apt_key:
-    url: "https://packages.erlang-solutions.com/debian/erlang_solutions.asc"
-    validate_certs: false
+    url: "https://gist.githubusercontent.com/sghribi/211410609a87daf194784e29c6572d78/raw/cfc05143a0a3448c8aea7b881204effa18889c5b/erlang_solutions.asc"
 
 - name: add erlang solutions repository
   apt_repository:
